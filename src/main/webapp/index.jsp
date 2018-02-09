@@ -4,7 +4,7 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=EUC-KR">
-<title>Insert title here</title>
+<title>인덱스</title>
 </head>
 <body>
 <a href="adminBookSearch.do">관리자모드</a>
