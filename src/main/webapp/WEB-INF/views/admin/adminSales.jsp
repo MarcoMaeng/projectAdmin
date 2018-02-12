@@ -397,11 +397,11 @@
 	</div>
 
 	<!-- ECharts -->
-	<script src="vendors/echarts/dist/echarts.min.js"></script>
+	<script src="vendors/echarts/dist/echarts.js"></script>
 	 <script>
       var theme = {
           color: [
-              '#26B99A', '#34495E', '#7cbae2', '#3498DB',
+              '#083D76', '#F95738', '#FFC72C', '#3498DB',
               '#9B59B6', '#8abb6f', '#759c6a', '#bfd3b7'
           ],
 
@@ -614,86 +614,71 @@
       var echartBar = echarts.init(document.getElementById('mainb'), theme);
 
       echartBar.setOption({
-        title: {
-          text: '일별 그래프',
-          subtext: '일별조회'
-        },
-        tooltip: {
-          trigger: 'axis'
-        },
-        legend: {
-          data: ['종합', '현금', '포인트']
-        },
-        toolbox: {
-          show: false
-        },
-        calculable: false,
-        xAxis: [{
-          type: 'category',
-          data: ['2018.01.01', '2018.01.02', '2018.01.03', '2018.01.04', '2018.01.05', '2018.01.06', '2018.01.07', '2018.01.08', '2018.01.09', '2018.01.10']
-        }],
-        yAxis: [{
-          type: 'value'
-        }],
-        series: [{
-          name: '종합',
-          type: 'bar',
-          data: [11000, 12000, 13000, 14000, 15000, 16000, 17000, 18000, 19000, 20000],
-          markPoint: {
-            data: [{
-              type: 'max',
-              name: '최대값'
-            }, {
-              type: 'min',
-              name: '최소값'
-            }]
-          },
-          markLine: {
-            data: [{
-              type: 'average',
-              name: '평균'
-            }]
-          }
-        }, {
-          name: '현금',
-          type: 'bar',
-          data: [9900, 10800, 11700, 12600, 13500, 14400, 15300, 16200, 17100, 18000],
-          markPoint: {
-            data: [{
-              name: '최대값',
-              type: 'max'
-            }, {
-              name: '최소값',
-              type: 'min'
-            }]
-          },
-          markLine: {
-            data: [{
-              type: 'average',
-              name: '평균'
-            }]
-          }
-        }, {
-            name: '포인트',
-            type: 'bar',
-            data: [1100, 1200, 1300, 1400, 1500, 1600, 1700, 1800, 1900, 2000],
-            markPoint: {
-              data: [{
-                name: '최대값',
-                type: 'max'
-              }, {
-                name: '최소값',
-                type: 'min'
-              }]
-            },
-            markLine: {
-              data: [{
-                type: 'average',
-                name: '평균'
-              }]
-            }
-          }]
-      });
+    	    title: {
+    	        text: '일별 그래프',
+    	        subtext: '일별조회'
+    	    },
+
+    	    tooltip : {
+    	        trigger: 'axis'
+    	    },
+
+    	    toolbox: {
+    	        show : true,
+    	        feature : {
+    	            mark : {show: true},
+    	            dataView : {show: true, readOnly: false},
+    	            magicType: {show: true, type: ['line', 'bar']},
+    	            restore : {show: true},
+    	            saveAsImage : {show: true}
+    	        }
+    	    },
+    	    calculable : true,
+    	    legend: {
+    	        data:['종합', '현금', '포인트']
+    	    },
+    	    xAxis : [
+    	        {
+    	            type : 'category',
+    	            data : ['2018.01.01', '2018.01.02', '2018.01.03', '2018.01.04', '2018.01.05', '2018.01.06', '2018.01.07', '2018.01.08', '2018.01.09', '2018.01.10']
+    	        }
+    	    ],
+    	    yAxis : [{
+    	            type : 'value'
+    	    }],
+
+    	    series : [{
+    	          name: '종합',
+    	          type: 'bar',
+    	          data: [11000, 12000, 13000, 14000, 15000, 16000, 17000, 18000, 19000, 30000],
+    	          markLine: {
+    	              data: [{
+    	                type: 'average',
+    	                name: '평균'
+    	              }]
+    	            }
+    	        }, {
+    	          name: '현금',
+    	          type: 'bar',
+    	          data: [9900, 10800, 11700, 12600, 13500, 14400, 15300, 16200, 17100, 18000],
+    	          markLine: {
+    	              data: [{
+    	                type: 'average',
+    	                name: '평균'
+    	              }]
+    	            }
+    	        }, {
+    	            name: '포인트',
+    	            type: 'bar',
+    	            data: [1100, 500, 0, 5000, 100, 3000, 1700, 0, 6000, 20000],
+    	            markLine: {
+    	                data: [{
+    	                  type: 'average',
+    	                  name: '평균'
+    	                }]
+    	              }
+    	          }]
+    	});
 		/*echartBar- 월별!!--------------------------------------------------------------------------------------------*/
       var echartBar = echarts.init(document.getElementById('mainb1'), theme);
 
