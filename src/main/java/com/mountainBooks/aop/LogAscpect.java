@@ -18,7 +18,6 @@ public class LogAscpect {
 	public Object advice(ProceedingJoinPoint joinPoint) {
 		Object obj=null;
 		
-		
 		try {
 			
 			logger.info(joinPoint.getTarget().getClass().getName()+"\t\t"+joinPoint.getSignature().getName());
