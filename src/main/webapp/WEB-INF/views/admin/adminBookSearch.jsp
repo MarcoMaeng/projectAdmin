@@ -47,11 +47,11 @@
 														<tr role="row" class="target_jm">
 															<td class="sorting_1">9788932030067${i}</td>
 															<td>
-																<a href="#">난생처음 히치하이킹</a>
+																<a href="adminBookInfo.do">난생처음 히치하이킹</a>
 															</td>
 															<td>김아영, 서영아</td>
 															<td>문학과지성사</td>
-															<td>2017년 06월 05일</td>
+															<td>2017-06-05</td>
 															<td>9,000원</td>
 															<td>xxxx권</td>
 														</tr>
@@ -76,7 +76,7 @@
 <!-- iCheck -->
 <script src="vendors/iCheck/icheck.min.js"></script>
 <!-- Datatables -->
-<script src="vendors/datatables.net/js/jquery.dataTables.js"></script>
+<script src="vendors/datatables.net/js/jquery.dataTables_jm.js"></script>
 <script src="vendors/datatables.net-bs/js/dataTables.bootstrap.min.js"></script>
 <script src="vendors/datatables.net-buttons/js/dataTables.buttons.min.js"></script>
 <script src="vendors/datatables.net-buttons-bs/js/buttons.bootstrap.min.js"></script>

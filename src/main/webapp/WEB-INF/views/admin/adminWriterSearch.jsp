@@ -30,6 +30,12 @@
 		$(opener.document).find("#writerNum").val(num);
 		self.close();
 	}
+	
+	function writerInsert() {
+		window.open("adminWriterInsert.do", "", "width=570, height=600");
+		$(opener.document).close();
+		return false;
+	}
 </script>
 </head>
 
@@ -66,7 +72,7 @@
 									</thead>
 									<tbody class="book_info_list">
 										<!-- for문 리스트(홀수일경우 class안에 odd, 짝수일경우 class안에 even 나머지 동일) -->
-										<c:set var="test" value="${3}"/>
+										<c:set var="test" value="${0}"/>
 										<c:if test="${test>0}">
 											<c:forEach var="i" begin="1" end="${test}">
 												<c:if test="${i%2!=0}">
@@ -97,6 +103,15 @@
 										</tr>
 									</tbody>
 								</table>
+							</div>
+						</div>
+					</div>
+					<div class="form-group" style="overflow: hidden;">
+						<div class="col-md-9 col-sm-9 col-xs-12 writer_select_area">
+							<div id="datatable_filter" class="dataTables_filter filter_area_right_jm writer_select" style="width: auto; float: none;">
+								<div style="float: left; margin-left: 200px;">
+									<button id="writer_insert" class="btn-all btn-all_jm" onclick="writerInsert()">저자등록</button>
+								</div>
 							</div>
 						</div>
 					</div>
