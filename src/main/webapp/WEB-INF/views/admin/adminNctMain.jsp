@@ -143,8 +143,8 @@
 																<a href="#" id="minus_ej${i}" class="float float_ej floatred_ej">
 																	<i id="minus2_ej${i}" class="fa fa-minus my-float"></i>
 																</a>
-																<a href="adminNctUpdate.do" class="paint-brush_ej">
-																	<i class="fa fa-paint-brush brush_ej"></i>
+																<a href="adminNctUpdate.do" class="paint-brush2_ej">
+																	<i class="fa fa-paint-brush brush2_ej"></i>
 																</a>
 															</td>
 															<td class="bunho_ej">2018-02-01</td>

@@ -97,14 +97,14 @@
 	vertical-align: middle !important;
 }
 
-.brush_ej{
+.brush2_ej{
 	float: right;
 	color: #9c9c9c;
 	margin-left: 5px;
 	cursor: pointer;
 }
 
-.brush_ej:hover{
+.brush2_ej:hover{
 	color:#000;
 }
 
@@ -118,7 +118,7 @@
 	cursor: pointer;
 }
 
-.control-label_ej{
+.control-label2_ej{
 	width: 22%;
 }
 
@@ -126,13 +126,13 @@
 	margin-top: 20px;
 }
 
-.col-md-9_ej{
+.col-md_ej{
     margin: -10px 0 5px 0;
     width: 100%;
     text-align: center;
 }
 
-.form-control_ej{
+.form-control2_ej{
 	resize: none;
 }
 

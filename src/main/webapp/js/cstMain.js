@@ -32,7 +32,7 @@ $(function(){
 			
 			var tr = $("<tr class='child content_ej"+i+"'></tr>");
 			tr.append("<td class='child_ej' colspan='2'><span>내용</span></td>");
-			tr.append("<td colspan='4'><span></span></td>");
+			tr.append("<td colspan='4'><span>문의내용</span></td>");
 			
 			$(this).closest("tr").after(tr);
 			

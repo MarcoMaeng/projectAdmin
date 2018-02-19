@@ -114,8 +114,8 @@
 													<th class="checkbox_ej" style="width: 3%;">
 														<input type="checkbox" id="check-all" class="flat">
 													</th>
-													<th class="column-title" style="width: 5%; text-align: center;">번호</th>
-													<th class="column-title" style="width: 20%; text-align: center;">상담구분</th>
+													<th class="column-title" style="width: 10%; text-align: center;">아이디</th>
+													<th class="column-title" style="width: 15%; text-align: center;">상담구분</th>
 													<th class="column-title" style="width: 45%; text-align: center;">상담명</th>
 													<th class="column-title" style="width: 10%; text-align: center;">상담일</th>
 													<th class="column-title" style="width: 10%; text-align: center;">답변여부</th>
@@ -135,7 +135,7 @@
 															<td class="checkbox_ej">
 																<input type="checkbox" class="flat" name="table_records">
 															</td>
-															<td class="bunho_ej">${i}</td>
+															<td class="bunho_ej">아이디</td>
 															<td class=" ">결제방법</td>
 															<td class=" ">
 																회원가입은 어떻게 하나요?
@@ -145,7 +145,7 @@
 																<a href="#" id="minus_ej${i}" class="float float_ej floatred_ej">
 																	<i id="minus2_ej${i}" class="fa fa-minus my-float"></i>
 																</a>
-																<a class="paint-brush_ej" data-toggle="modal" data-target=".bs-example-modal-lg2">
+																<a class="paint-brush_ej brush2_ej" data-toggle="modal" data-target=".bs-example-modal-lg2">
 																	<i class="fa fa-comment fa-comment_ej"></i>
 																</a>
 															</td>
@@ -205,16 +205,16 @@
 
 
 													<div class="form-group modal-body_ej">
-														<label class="control-label col-md-3 col-sm-3 col-xs-12 control-label_ej">답변 내용 </label>
+														<label class="control-label col-md-3 col-sm-3 col-xs-12 control-label2_ej">답변 내용 </label>
 														<div class="col-md-9 col-sm-9 col-xs-12">
-															<textarea class="form-control form-control_ej" rows="10" placeholder="내용 입력"></textarea>
+															<textarea class="form-control form-control2_ej" rows="10" placeholder="내용 입력"></textarea>
 														</div>
 													</div>
 
 													<div class="ln_solid"></div>
 
 													<div class="form-group">
-														<div class="col-md-9 col-sm-9 col-xs-12 col-md-offset-3 col-md-9_ej">
+														<div class="col-md-9 col-sm-9 col-xs-12 col-md-offset-3 col-md_ej">
 															<button type="submit" class="btn btn-success btn_ej">등록</button>
 															<button type="reset" class="btn btn-primary btn_ej">내용 초기화</button>
 														</div>
@@ -238,16 +238,16 @@
 
 
 													<div class="form-group modal-body_ej">
-														<label class="control-label col-md-3 col-sm-3 col-xs-12 control-label_ej">답변 내용 </label>
+														<label class="control-label col-md-3 col-sm-3 col-xs-12 control-label2_ej">답변 내용 </label>
 														<div class="col-md-9 col-sm-9 col-xs-12">
-															<textarea id="textContent_ej" class="form-control form-control_ej" rows="10" placeholder="내용 입력">내용내용내용내용내용</textarea>
+															<textarea id="textContent_ej" class="form-control form-control2_ej" rows="10" placeholder="내용 입력">내용내용내용내용내용</textarea>
 														</div>
 													</div>
 
 													<div class="ln_solid"></div>
 
 													<div class="form-group">
-														<div class="col-md-9 col-sm-9 col-xs-12 col-md-offset-3 col-md-9_ej">
+														<div class="col-md-9 col-sm-9 col-xs-12 col-md-offset-3 col-md_ej">
 															<button type="submit" class="btn btn-success btn_ej">등록</button>
 															<button id="reset_ej" type="button" class="btn btn-primary btn_ej">내용 초기화</button>
 														</div>
