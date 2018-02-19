@@ -3,10 +3,10 @@
 "http://tiles.apache.org/dtds/tiles-config_2_0.dtd">
 
 <tiles-definitions>
-	<definition name="layout" template="/WEB-INF/views/template/layout.jsp">
-		<put-attribute name="header" value="/WEB-INF/views/template/adminHeader.jsp"/>
+	<definition name="layout" template="/WEB-INF/views/adminView/layout.jsp">
+		<put-attribute name="header" value="/WEB-INF/views/adminView/adminHeader.jsp"/>
 		<put-attribute name="content" value=""/>
-		<put-attribute name="foot" value="/WEB-INF/views/template/adminFooter.jsp"/>
+		<put-attribute name="foot" value="/WEB-INF/views/adminView/adminFooter.jsp"/>
 	</definition>
 	
 	<!-- content 만들기 -->

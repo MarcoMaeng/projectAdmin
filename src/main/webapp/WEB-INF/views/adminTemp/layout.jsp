@@ -9,7 +9,7 @@
 <!-- Font Awesome -->
 <link href="vendors/font-awesome/css/font-awesome.min.css" rel="stylesheet">
 <!-- Custom Theme Style -->
-<link href="build/css/custom.css" rel="stylesheet">
+<link href="css/custom.css" rel="stylesheet">
 
 <!-- jQuery -->
 <script src="vendors/jquery/dist/jquery.min.js"></script>
@@ -28,6 +28,6 @@
 	<!-- Bootstrap -->
 	<script src="vendors/bootstrap/dist/js/bootstrap.min.js"></script>
 	<!-- Custom Theme Scripts -->
-	<script src="build/js/custom.js"></script>
+	<script src="js/custom.js"></script>
 </body>
 </html>
