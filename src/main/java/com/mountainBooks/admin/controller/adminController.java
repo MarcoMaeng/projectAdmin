@@ -21,9 +21,18 @@ public class adminController {
 		return new ModelAndView("adminView/adminBookInsert.admin");
 	}
 	
+	@RequestMapping(value="adminBookInfo.do", method=RequestMethod.GET)
+	public ModelAndView adminBookInfo(HttpServletRequest request, HttpServletResponse response) {		
+		return new ModelAndView("admin/adminBookInfo.admin");
+	}
+	
 	@RequestMapping(value="adminWriterSearch.do", method=RequestMethod.GET)
 	public ModelAndView adminWriterSearch(HttpServletRequest request, HttpServletResponse response) {		
 		return new ModelAndView("adminView/adminWriterSearch.admin");
+	}
+	@RequestMapping(value="adminWriterInsert.do", method=RequestMethod.GET)
+	public ModelAndView adminWriterInsert(HttpServletRequest request, HttpServletResponse response) {		
+		return new ModelAndView("admin/adminWriterInsert.admin");
 	}
 	
 	@RequestMapping(value="adminMemberManage.do", method=RequestMethod.GET)
