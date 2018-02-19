@@ -3,23 +3,23 @@
 "http://tiles.apache.org/dtds/tiles-config_2_0.dtd">
 
 <tiles-definitions>
-	<definition name="layout" template="/WEB-INF/views/adminView/layout.jsp">
-		<put-attribute name="header" value="/WEB-INF/views/adminView/adminHeader.jsp"/>
-		<put-attribute name="content" value=""/>
-		<put-attribute name="foot" value="/WEB-INF/views/adminView/adminFooter.jsp"/>
+	<definition name="AdminLayout" template="/WEB-INF/views/adminTemp/layout.jsp">
+		<put-attribute name="adminHeader" value="/WEB-INF/views/adminTemp/adminHeader.jsp"/>
+		<put-attribute name="adminContent" value=""/>
+		<put-attribute name="adminFoot" value="/WEB-INF/views/adminTemp/adminFooter.jsp"/>
 	</definition>
 	
 	<!-- content 만들기 -->
-	<definition name="*.admin" extends="layout">
-		<put-attribute name="content" value="/WEB-INF/views/{1}.jsp"/>
+	<definition name="*.admin" extends="AdminLayout">
+		<put-attribute name="adminContent" value="/WEB-INF/views/{1}.jsp"/>
 	</definition>
 	
-	<definition name="*/*.admin" extends="layout">
-		<put-attribute name="content" value="/WEB-INF/views/{1}/{2}.jsp"/>
+	<definition name="*/*.admin" extends="AdminLayout">
+		<put-attribute name="adminContent" value="/WEB-INF/views/{1}/{2}.jsp"/>
 	</definition>
 	
-	<definition name="*/*/*.admin" extends="layout">
-		<put-attribute name="content" value="/WEB-INF/views/{1}/{2}/{3}.jsp"/>
+	<definition name="*/*/*.admin" extends="AdminLayout">
+		<put-attribute name="adminContent" value="/WEB-INF/views/{1}/{2}/{3}.jsp"/>
 	</definition>
 	
 </tiles-definitions>

@@ -16,13 +16,13 @@
 </head>
 <body class="nav-md">
 	<!-- header -->
-	<tiles:insertAttribute name="header" />
+	<tiles:insertAttribute name="adminHeader" />
 
 	<!-- content -->
-	<tiles:insertAttribute name="content" />
+	<tiles:insertAttribute name="adminContent" />
 
 	<!-- foot -->
-	<tiles:insertAttribute name="foot" />
+	<tiles:insertAttribute name="adminFoot" />
 
 
 	<!-- Bootstrap -->
