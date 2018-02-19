@@ -15,31 +15,6 @@
 <link href="vendors/datatables.net-scroller-bs/css/scroller.bootstrap.min.css" rel="stylesheet">
 <link rel="icon" href="images/favicon.ico" type="image/ico" />
 <title>㈜산책 매출관리</title>
-<script type="text/javascript">
-	$(function() {
-		// 		$("#day2,#day3").hide();
-		// 		$("table:eq(1), table:eq(2)").attr("id","");
-		// 		$("#listSize").change(function() {
-		// 			if ($(this).val() == 1) {
-		// 				$("#day2,#day3").hide();
-		// 				$("table:eq(1), table:eq(2)").attr("id","");
-		// 				$("#day1").show();
-		// 				$("table:eq(0)").attr("id","datatable");
-		// 			} else if ($(this).val() == 2) {
-		// 				$("#day1,#day3").hide();
-		// 				$("table:eq(0), table:eq(2)").attr("id","");
-		// 				$("#day2").show();
-		// 				$("table:eq(1)").attr("id","datatable");
-		// 			} else if ($(this).val() == 3) {
-		// 				$("#day1,#day2").hide();
-		// 				$("table:eq(0), table:eq(1)").attr("id","");
-		// 				$("#day3").show();
-		// 				$("table:eq(2)").attr("id","datatable");
-		// 			}
-
-		// 		});
-	});
-</script>
 </head>
 <div class="container body">
 	<div class="main_container">

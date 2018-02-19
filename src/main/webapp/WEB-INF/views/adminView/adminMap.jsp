@@ -10,8 +10,8 @@
 <!-- bootstrap-daterangepicker -->
 <link href="vendors/bootstrap-daterangepicker/daterangepicker.css" rel="stylesheet">
 <!-- 용기CSS -->
-<link href="build/css/btn_yk.css" rel="stylesheet">
-<script type="text/javascript" src="build/js/function_yk.js"></script>
+<link href="css/btn_yk.css" rel="stylesheet">
+<script type="text/javascript" src="js/function_yk.js"></script>
 <script type="text/javascript">
 	$(document).ready(
 			function() {
