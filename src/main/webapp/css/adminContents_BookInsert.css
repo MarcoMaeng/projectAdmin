@@ -9,13 +9,17 @@
 }
 .insert_layout:nth-child(1){
 	width: 30%;
-	border: 1px solid #5cb38b;
-	padding: 5px;
+	border: 0px solid #5cb38b;
 }
 .insert_layout:nth-child(2){
 	width: 69%;
 }
-
+.insert_area_jm{
+	margin-right: 50px;
+}
+.input-sm{
+	width: 170px;
+}
 .insert_layout > div{
 	margin-bottom: 15px;
 }
@@ -26,9 +30,12 @@
 	min-height: 0px !important;
 	max-width: none !important;
 	max-height: none !important;
-	width: 300px;
-	height: 450px;
+	width: 200px;
+	height: 300px;
 	margin-right: 0px;
+	border: 1px solid #5cb38b;
+	margin: 5px;
+	padding: 5px;
 }
 .form-group{
 	overflow: hidden;
@@ -57,6 +64,7 @@
 }
 .book_info_textarea textarea{
 	height: 150px;
+	word-break:
 }
 
 .area_jm{
@@ -76,7 +84,7 @@
 }
 
 .category_jm{
-	width: 173px;
+	width: 188px;
 	display: inline-block;
 	overflow: hidden;
 	font-size: 14px;
